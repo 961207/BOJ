@@ -12,11 +12,11 @@ for(let j=0; j<n.length; j++){
     if(ele === justBefore){
       obj[ele] += 1;
     }
-    else if(ele !== justBefore) {
-      if(obj[ele] === undefined){
+    else {
+      if(!obj[ele]){
         obj[ele] = 1;
       }
-      else if(obj[ele] !== undefined){
+      else {
         num += 1;
         break;
       }
