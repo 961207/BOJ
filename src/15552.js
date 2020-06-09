@@ -1,8 +1,10 @@
 const n = require('fs').readFileSync('dev/stdin').toString().trim().split('\n');
-const T = n.shift();
-
+n.shift();
+let str = "";
 for(const ele of n){
-  const num1 = Number(ele.split(" ")[0])
-  const num2 = Number(ele.split(" ")[1])
-  console.log(num1+num2);
+  const num1 = +ele.split(" ")[0];
+  const num2 = +ele.split(" ")[1];
+  const sum= num1+num2;
+  str += sum + '\n';
 }
+console.log(str.trim());
