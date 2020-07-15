@@ -1,9 +1,4 @@
-const n=require('fs').readFileSync('dev/stdin').toString().trim().split('\n').shift().split(" ").map(v=>+v);
-let N = n[0];
-const m = n[1];
-const M = n[2];
-const T = n[3];
-const R = n[4];
+let [N,m,M,T,R]=require('fs').readFileSync('dev/stdin').toString().trim().split(' ').map(v=>+v);
 
 let pulse = m;
 let time = 0;
