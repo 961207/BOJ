@@ -6,3 +6,5 @@ console.log(n.sort((a, b) => a - b).reduce((a,c,i)=>{
     return a<c?a:c;
   }
 }));
+
+// console.log(require('fs').readFileSync('/dev/stdin').toString().split(' ').sort((a,b)=>a-b)[1]);
