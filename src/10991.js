@@ -8,11 +8,12 @@ for(let i=1; i<=n; i++){
   const starNum = i*2-1;
   let starStr = "";
   for(let j=0; j<starNum; j++){
-    if(j%2===0){
-      starStr += "*";
-    } else {
-      starStr += " ";
-    }
+//  if(j%2===0){
+//    starStr += "*";
+//  } else {
+//    starStr += " ";
+//  }
+    starStr += j%2===0 ? "*" : " "
   }
   console.log(blankStr+starStr);
 }
