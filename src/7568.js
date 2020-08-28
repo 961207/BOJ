@@ -7,7 +7,7 @@
 // 		if(i === j) continue;
 // 		const [w1,h1] = n[i].split(" ");
 // 		const [w2,h2] = n[j].split(" ");
-// 		if((w1 < w2) && (h1 < h2)) sum += 1;
+// 		if((w1 < w2) && (h1 < h2)) sum += 1; // sum++
 // 	}
 // 	results[i] = sum;
 // }
