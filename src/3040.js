@@ -2,7 +2,7 @@ const n = require('fs').readFileSync('dev/stdin').toString().trim().split('\n').
 (()=>{
   for(let i=0; i<n.length-1; i++){
     for(let j=i+1; j<n.length; j++){
-      const arr = n.filter((_,index)=>index !== i && index !== j);
+      const arr = n.filter((_,idx)=>idx !== i && idx !== j);
       if(arr.reduce((a,c)=>a+c) === 100){
         console.log(arr.join("\n"));
         return;
