@@ -16,3 +16,4 @@ else if(score <= 69 && score >=60 ){
 else{
   console.log("F");
 }
+ 
